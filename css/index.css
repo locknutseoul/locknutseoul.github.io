@@ -11,7 +11,10 @@ html, body {
     float: left;
     border-right: 1px solid #f06;
     box-sizing: border-box;
-    position: relative; }
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000; }
     #container > #header_left > h1 {
       position: absolute;
       z-index: 10000;
@@ -104,23 +107,23 @@ html, body {
     height: 100%;
     background-color: #d93;
     float: right; }
-    #container > #content .main_box {
+    #container > #content > .main_box {
       width: 100%;
       height: 600px;
       background-color: #fa1; }
-      #container > #content .main_box > dl {
+      #container > #content > .main_box > dl {
         width: 100%;
         height: 100%;
         background-color: #ff1; }
-        #container > #content .main_box > dl > dt {
+        #container > #content > .main_box > dl > dt {
           width: 50%;
           height: 100%;
           background-color: #ddd;
           float: left;
           position: relative; }
-          #container > #content .main_box > dl > dt:hover .hidden_box {
+          #container > #content > .main_box > dl > dt:hover .hidden_box {
             opacity: 1; }
-          #container > #content .main_box > dl > dt > .hidden_box {
+          #container > #content > .main_box > dl > dt > .hidden_box {
             transition: all 0.2s;
             opacity: 0;
             position: absolute;
@@ -130,11 +133,11 @@ html, body {
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.7); }
-            #container > #content .main_box > dl > dt > .hidden_box > h2 {
+            #container > #content > .main_box > dl > dt > .hidden_box > h2 {
               display: block;
               width: 100%;
               height: 100%; }
-              #container > #content .main_box > dl > dt > .hidden_box > h2 > a {
+              #container > #content > .main_box > dl > dt > .hidden_box > h2 > a {
                 width: 100%;
                 height: 100%;
                 display: block;
@@ -143,16 +146,16 @@ html, body {
                 font-weight: bold;
                 font-size: 50px;
                 line-height: 600px; }
-        #container > #content .main_box > dl > dd {
+        #container > #content > .main_box > dl > dd {
           float: left;
           width: 50%;
           height: 50%; }
-          #container > #content .main_box > dl > dd.main_box_2 {
+          #container > #content > .main_box > dl > dd.main_box_2 {
             background-color: #faf;
             position: relative; }
-            #container > #content .main_box > dl > dd.main_box_2:hover .hidden_box {
+            #container > #content > .main_box > dl > dd.main_box_2:hover .hidden_box {
               opacity: 1; }
-            #container > #content .main_box > dl > dd.main_box_2 > .hidden_box {
+            #container > #content > .main_box > dl > dd.main_box_2 > .hidden_box {
               transition: all 0.2s;
               opacity: 0;
               position: absolute;
@@ -162,11 +165,11 @@ html, body {
               width: 100%;
               height: 100%;
               background-color: rgba(0, 0, 0, 0.7); }
-              #container > #content .main_box > dl > dd.main_box_2 > .hidden_box > h2 {
+              #container > #content > .main_box > dl > dd.main_box_2 > .hidden_box > h2 {
                 display: block;
                 width: 100%;
                 height: 100%; }
-                #container > #content .main_box > dl > dd.main_box_2 > .hidden_box > h2 > a {
+                #container > #content > .main_box > dl > dd.main_box_2 > .hidden_box > h2 > a {
                   width: 100%;
                   height: 100%;
                   display: block;
@@ -175,12 +178,12 @@ html, body {
                   font-weight: bold;
                   font-size: 50px;
                   line-height: 300px; }
-          #container > #content .main_box > dl > dd.main_box_3 {
+          #container > #content > .main_box > dl > dd.main_box_3 {
             background-color: #aff;
             position: relative; }
-            #container > #content .main_box > dl > dd.main_box_3:hover .hidden_box {
+            #container > #content > .main_box > dl > dd.main_box_3:hover .hidden_box {
               opacity: 1; }
-            #container > #content .main_box > dl > dd.main_box_3 > .hidden_box {
+            #container > #content > .main_box > dl > dd.main_box_3 > .hidden_box {
               transition: all 0.2s;
               opacity: 0;
               position: absolute;
@@ -190,11 +193,11 @@ html, body {
               width: 100%;
               height: 100%;
               background-color: rgba(0, 0, 0, 0.7); }
-              #container > #content .main_box > dl > dd.main_box_3 > .hidden_box > h2 {
+              #container > #content > .main_box > dl > dd.main_box_3 > .hidden_box > h2 {
                 display: block;
                 width: 100%;
                 height: 100%; }
-                #container > #content .main_box > dl > dd.main_box_3 > .hidden_box > h2 > a {
+                #container > #content > .main_box > dl > dd.main_box_3 > .hidden_box > h2 > a {
                   width: 100%;
                   height: 100%;
                   display: block;
@@ -203,5 +206,21 @@ html, body {
                   font-weight: bold;
                   font-size: 50px;
                   line-height: 300px; }
+    #container > #content > .box_02 {
+      width: 100%;
+      height: 500px;
+      background-color: #abc; }
+    #container > #content > .box_03 {
+      width: 100%;
+      height: 500px;
+      background-color: #af9; }
+    #container > #content > .box_04 {
+      width: 100%;
+      height: 500px;
+      background-color: #ff3; }
+    #container > #content > .box_05 {
+      width: 100%;
+      height: 500px;
+      background-color: #f06; }
 
 /*# sourceMappingURL=index.css.map */

@@ -7,7 +7,8 @@ html,body{height: 100%;}
 		float: left;
 		border-right: 1px solid #f06;
 		box-sizing: border-box;
-		position: relative;
+		position: fixed;
+		top: 0;	left: 0; z-index: 1000000;
 		>h1{
 			position: absolute; z-index: 10000;
 			left: 0; top: 0;
@@ -87,7 +88,7 @@ html,body{height: 100%;}
 		width: calc(100% - 200px); height: 100%;
 		background-color: #d93;
 		float: right;
-		.main_box{
+		>.main_box{
 			width: 100%; height: 600px;
 			background-color: #fa1;
 			>dl{
@@ -169,5 +170,17 @@ html,body{height: 100%;}
 				}//dd
 			}//dl
 		}//mainbox
+		>.box_02{
+			width: 100%; height: 500px; background-color: #abc;
+		}
+		>.box_03{
+			width: 100%; height: 500px; background-color: #af9;
+		}
+		>.box_04{
+			width: 100%; height: 500px; background-color: #ff3;
+		}
+		>.box_05{
+			width: 100%; height: 500px; background-color: #f06;
+		}
 	}//content
 }//container
